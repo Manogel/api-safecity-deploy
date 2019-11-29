@@ -53,6 +53,10 @@ class Chamado extends Model {
       foreignKey: 'fk_id_categoria',
       as: 'Categoria',
     });
+    this.hasMany(models.ChamadoNota, {
+      foreignKey: 'fk_id_chamado',
+      as: 'Notas',
+    });
   }
 }
 
