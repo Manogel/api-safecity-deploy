@@ -19,7 +19,6 @@ class ChamadoNota extends Model {
           foreignKey: true,
         },
         descricao: Sequelize.STRING,
-        anexo: Sequelize.STRING,
         data_criacao: Sequelize.DATE,
       },
 

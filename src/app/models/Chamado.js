@@ -30,6 +30,10 @@ class Chamado extends Model {
           type: Sequelize.DATE,
           defaultValue: Sequelize.fn('CURRENT_TIMESTAMP'),
         },
+        updated_at: {
+          type: Sequelize.DATE,
+          defaultValue: Sequelize.fn('CURRENT_TIMESTAMP'),
+        },
         data_finalizacao: { type: Sequelize.DATE, defaultValue: null },
         descricao: Sequelize.STRING,
         latitude: Sequelize.STRING,
